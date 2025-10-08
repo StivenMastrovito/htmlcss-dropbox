@@ -18,7 +18,7 @@ img{
     margin: 0 auto;
 }
 
-.container-big{
+.container{
     width: 60%;
     margin: 0 auto;
 }
@@ -92,4 +92,56 @@ header{
     /* debug */
     background-color: rgb(0, 255, 34);
     height: 90%;    
+}
+
+.piano{
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 30px;
+    /* debug */
+    height: 1000px;
+    background-color: blue;
+}
+
+.piano h1{
+    /* debug */
+    height: 80px;
+    background-color: black;
+}
+
+.fatturazione{
+    gap: 20px;
+    align-items: center;
+    
+    /* debug */
+    width: 50%;
+    height: 80px;
+     background-color: red;
+}
+
+.mensile{
+    width: 40%;
+    height: 80%;
+    background-color: green;
+}
+.annuale{
+    width: 40%;
+    height: 80%;
+    background-color: green;
+}
+
+.griglia{
+    gap: 20px;
+    justify-content: space-between;
+    /* debug */
+    height: 800px;
+    width: 100%;
+}
+
+.card{
+    width: calc(100% / 3 - 40px / 3);
+    /* debug */
+    height: 100%;
+    background-color: blueviolet;
+    
 }
