@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* ----UTILITYS---- */
+.flex{
+    display: flex;
+}
+
+.container-big{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-big{
+    width: 60%;
+    margin: 0 auto;
+}
+/* ----HEADER---- */
+
+header{
+    height: 80px;
+    background-color: blue;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0;
+}
+
+.left-menu{
+    width: 40%;
+    height: 60px;
+    background-color: red;
+}
+.right-menu{
+    width: 40%;
+    height: 60px;
+    background-color: red;
+}
+
+/* ------MAIN----- */
+
+.hero{
+    background-color: rgb(162, 246, 246);
+    width: 100%;
+    padding-top: 80px;
+    /* debug */
+    height: 500px;
+    margin-bottom: 100px;
+}
+
+.home{
+    flex-direction: column;
+    justify-content: space-between;
+    /* debug */
+    background-color: blue;
+    height: 500px;
+}
+
+.home .titolo{
+    width: 100%;
+    /* debug */
+    background-color: red;
+    height: 33%;
+}
+
+.home .prova{
+    width: 100%;
+    /* debug */
+    background-color: red;
+    height: 63%;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home .prova .left-prova{
+    width: 30%;
+    /* debug */
+    background-color: rgb(0, 255, 21);
+    height: 90%;
+
+}
+
+.home .prova .right-prova{
+    width: 60%;
+    /* debug */
+    background-color: rgb(0, 255, 34);
+    height: 90%;    
+}
