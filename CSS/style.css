@@ -11,6 +11,12 @@ img{
 /* ----UTILITYS---- */
 .flex{
     display: flex;
+    gap: 10px;
+}
+
+.column{
+    flex-direction: column;
+    gap: 10px;
 }
 
 .container-big{
@@ -182,5 +188,25 @@ header{
     /* debug */
     height: 800px;
     background-color: blue;
+}
+
+.operazioni h2{
+    height: 100px;
+    background-color: black;
+}
+
+.operazioni .griglia{
+    flex-wrap: wrap;
+    gap: 20px;
+
+    /* debug */
+    height: 620px;
+}
+
+.operazioni .griglia .card{
+    width: calc(100% / 3 - 40px / 3);
+    /* debug */
+    height: 300px;
+    background-color: chartreuse;
 }
 
