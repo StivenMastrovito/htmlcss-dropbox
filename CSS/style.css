@@ -98,6 +98,7 @@ header{
     flex-direction: column;
     gap: 50px;
     padding-top: 30px;
+    margin-bottom: 30px;
     /* debug */
     height: 1000px;
     background-color: blue;
@@ -130,7 +131,7 @@ header{
     background-color: green;
 }
 
-.griglia{
+.piano .griglia{
     gap: 20px;
     justify-content: space-between;
     /* debug */
@@ -138,10 +139,48 @@ header{
     width: 100%;
 }
 
-.card{
+.piano .griglia .card{
     width: calc(100% / 3 - 40px / 3);
     /* debug */
     height: 100%;
     background-color: blueviolet;
     
 }
+
+.contatti{
+    margin-bottom: 200px;
+    /* debug */
+    background-color: blue;
+    height: 200px;
+}
+
+.partner{
+    gap: 20px;
+    margin-bottom: 100px;
+    /* debug */
+    height: 400px;
+    background-color: blue;
+}
+
+.partner .img{
+    /* debug */
+    width: 60%;
+    background-color: red;
+    height: 100%;    
+}
+
+.partner .testo{
+    /* debug */
+    width: 40%;
+    background-color: red;
+    height: 100%;    
+}
+
+.operazioni{
+    gap: 80px;
+    flex-direction: column;
+    /* debug */
+    height: 800px;
+    background-color: blue;
+}
+
