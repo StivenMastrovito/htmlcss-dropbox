@@ -1,66 +1,91 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-ul{
+ul {
     list-style: inherit;
 }
 
-a{
+a {
     text-decoration: inherit;
     color: inherit;
 }
+
 /* ----UTILITYS---- */
-.flex{
+.flex {
     display: flex;
-    gap: 10px;
 }
 
-.column{
+.column {
     flex-direction: column;
     gap: 10px;
 }
 
-.center{
+.start {
+    justify-content: flex-start;
+}
+
+.space-beteween{
+    justify-content: space-between;
+}
+
+.center {
     align-items: center;
 }
 
-.container-big{
+.container-big {
     width: 80%;
     margin: 0 auto;
     max-width: 1300px;
 }
 
-.container{
+.container {
     width: 60%;
     margin: 0 auto;
     max-width: 1000px;
 }
 
-.bottone{
+.container-small {
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+.bottone {
     background-color: rgb(0, 132, 255);
     padding: 15px 13px;
     color: white;
 }
 
-.botte{
-    margin: 0 auto;
-    width: 80%;
+.bd {
+    border: 1px solid rgb(185, 185, 185);
 }
 
-.bd{
-    border: 1px solid gray;
+.fw {
+    font-weight: 900;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.gap5{
+    gap: 5px;
 }
 /* ----HEADER---- */
 
-header{
+header {
     height: 80px;
     justify-content: space-between;
     align-items: center;
@@ -68,19 +93,23 @@ header{
     color: black;
 }
 
-.left-menu{
+.left-menu {
     width: 40%;
     height: 60px;
     gap: 40px;
     list-style: none;
 }
 
-.left-menu img{
+.left-menu ul{
+    gap: 40px;
+}
+
+.left-menu img {
     width: 30%;
     height: 30px;
 }
 
-.right-menu{
+.right-menu {
     width: 40%;
     height: 60px;
     gap: 40px;
@@ -90,7 +119,7 @@ header{
 
 /* ------MAIN----- */
 
-.hero{
+.hero {
     background-color: rgb(158, 224, 224);
     width: 100%;
     padding-top: 80px;
@@ -99,47 +128,47 @@ header{
 
 }
 
-.home{
+.home {
     flex-direction: column;
     justify-content: space-between;
     gap: 40px;
 
 }
 
-.home .titolo{
+.home .titolo {
     width: 100%;
     font-size: 4rem;
     font-weight: 900;
 }
 
-.home .prova{
+.home .prova {
     width: 100%;
     justify-content: space-between;
     align-items: center;
 }
 
-.left-prova{
+.left-prova {
     width: 40%;
     gap: 20px;
     position: relative;
     bottom: 30px;
 }
 
-.left-prova p:nth-child(2){
+.left-prova p:nth-child(2) {
     align-self: flex-start;
 }
 
-.left-prova svg{
+.left-prova svg {
     width: 50px;
     height: 50px;
     margin-top: 30px;
 }
 
-.right-prova{
+.right-prova {
     width: 60%;
 }
 
-.piano{
+.piano {
     flex-direction: column;
     gap: 50px;
     padding-top: 30px;
@@ -148,62 +177,126 @@ header{
     height: 1000px;
 }
 
-.piano h1{
+.piano h1 {
     font-size: 2rem;
     font-weight: 900;
 }
 
-.fatturazione{
+.fatturazione {
     gap: 20px;
     align-items: center;
 }
 
-.fatturazione svg{
+.fatturazione svg {
     height: 20px;
     width: 20px;
 }
 
-.piano .griglia{
+.piano .griglia {
     gap: 20px;
     justify-content: space-between;
-    /* debug */
-    height: 800px;
-    width: 100%;
 }
 
-.piano .griglia .card{
+.piano .griglia .card {
     width: calc(100% / 3 - 40px / 3);
-    /* debug */
-    height: 100%;
-    background-color: blueviolet;
-    
 }
 
-.piano .griglia .card .titolo{
+.piano .griglia .card .titolo {
     justify-content: center;
     align-self: center;
-    height: 40px;   
+    height: 40px;
     width: 100%;
+    border-bottom: 1px solid gray;
 }
 
-.piano .griglia .card .titolo svg{
-    height: 20px;   
+.piano .griglia .card .titolo svg {
+    height: 20px;
     width: 20px;
 }
 
-.piano .griglia .card .titolo>ul li:first-child{
-    list-style-image: url("favicon.ico");
+.lista-professional li:first-child {
+    list-style-image: url(../icon/user-solid-full.svg);
+}
+
+.in-card h4 {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.in-card .mese {
+    color: gray;
+    font-size: 0.7rem;
+}
+
+.in-card .lista {
+    gap: 20px;
+    font-size: 0.8rem;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.lista-professional {
+    height: 15px;
+    width: 19px;
+    margin-right: 5px;
+    flex-grow: 1;
+}
+
+.lista p{
+    max-width: 85%;
+}
+
+.icon {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    flex-grow: 1;
 }
 
 
-.contatti{
+.in-card .lista p {
+    color: black;
+}
+
+
+.lista-advanced{
+    width: 18px;
+}
+
+.lista-enterprise{
+
+}
+
+.acquista a{
+    text-decoration: underline;
+    color: blue;
+}
+
+.riga{
+    width: 20%;
+    border-top: 0.5px solid gray;
+}
+
+.punto svg{
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    flex-grow: 1;
+    fill: blue;
+}
+.punto p{
+    max-width: 87%;
+}
+
+/* ------------------------ */
+.contatti {
     margin-bottom: 200px;
     /* debug */
     background-color: blue;
     height: 200px;
 }
 
-.partner{
+.partner {
     gap: 20px;
     margin-bottom: 100px;
     /* debug */
@@ -211,21 +304,21 @@ header{
     background-color: blue;
 }
 
-.partner .img{
+.partner .img {
     /* debug */
     width: 60%;
     background-color: red;
-    height: 100%;    
+    height: 100%;
 }
 
-.partner .testo{
+.partner .testo {
     /* debug */
     width: 40%;
     background-color: red;
-    height: 100%;    
+    height: 100%;
 }
 
-.operazioni{
+.operazioni {
     gap: 80px;
     flex-direction: column;
     margin-bottom: 100px;
@@ -234,12 +327,12 @@ header{
     background-color: blue;
 }
 
-.operazioni h2{
+.operazioni h2 {
     height: 100px;
     background-color: black;
 }
 
-.operazioni .griglia{
+.operazioni .griglia {
     flex-wrap: wrap;
     gap: 20px;
 
@@ -247,27 +340,27 @@ header{
     height: 620px;
 }
 
-.operazioni .griglia .card{
+.operazioni .griglia .card {
     width: calc(100% / 3 - 40px / 3);
     /* debug */
     height: 300px;
     background-color: chartreuse;
 }
 
-.coda{
+.coda {
     padding-right: 30%;
-    
+
     /* debug */
     background-color: blue;
     height: 300px;
 }
 
-.coda h3{
+.coda h3 {
     background-color: black;
     font-size: 3rem;
 }
 
-.coda p{
+.coda p {
     height: 30px;
     width: 200px;
     background-color: red;
@@ -275,19 +368,19 @@ header{
 
 /* ----FOOTER---- */
 
-footer{
+footer {
     background-color: black;
     height: 700px;
     padding: 100px 0 50px;
 }
 
-.foot{
+.foot {
     height: 90%;
     background-color: blue;
     gap: 20px
 }
 
-.top-foot{
+.top-foot {
     height: 80%;
     gap: 20px;
 
@@ -295,7 +388,7 @@ footer{
     background-color: red;
 }
 
-.top-foot ul{
+.top-foot ul {
     height: 100%;
     width: calc(100 / 4 - 60 / 3);
 
@@ -303,7 +396,7 @@ footer{
     background-color: green;
 }
 
-.bottom-foot{
+.bottom-foot {
     height: 20%;
     background-color: red;
     width: 100%;
