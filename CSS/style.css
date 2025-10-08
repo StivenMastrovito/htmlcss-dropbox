@@ -10,7 +10,7 @@ img{
 }
 
 ul{
-    list-style: none;
+    list-style: inherit;
 }
 
 a{
@@ -35,11 +35,28 @@ a{
 .container-big{
     width: 80%;
     margin: 0 auto;
+    max-width: 1300px;
 }
 
 .container{
     width: 60%;
     margin: 0 auto;
+    max-width: 1000px;
+}
+
+.bottone{
+    background-color: rgb(0, 132, 255);
+    padding: 15px 13px;
+    color: white;
+}
+
+.botte{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.bd{
+    border: 1px solid gray;
 }
 /* ----HEADER---- */
 
@@ -55,6 +72,7 @@ header{
     width: 40%;
     height: 60px;
     gap: 40px;
+    list-style: none;
 }
 
 .left-menu img{
@@ -67,63 +85,58 @@ header{
     height: 60px;
     gap: 40px;
     justify-content: flex-end;
+    list-style: none;
 }
 
-.inizia{
-    background-color: rgb(0, 132, 255);
-    padding: 7px 12px;
-    border: 1px solid gray;
-    color: white;
-}
 /* ------MAIN----- */
 
 .hero{
-    background-color: rgb(162, 246, 246);
+    background-color: rgb(158, 224, 224);
     width: 100%;
     padding-top: 80px;
-    /* debug */
-    height: 500px;
-    margin-bottom: 100px;
+    height: 650px;
+    margin-bottom: 200px;
+
 }
 
 .home{
     flex-direction: column;
     justify-content: space-between;
-    /* debug */
-    background-color: blue;
-    height: 500px;
+    gap: 40px;
+
 }
 
 .home .titolo{
     width: 100%;
-    /* debug */
-    background-color: red;
-    height: 33%;
+    font-size: 4rem;
+    font-weight: 900;
 }
 
 .home .prova{
     width: 100%;
-    /* debug */
-    background-color: red;
-    height: 63%;
-
     justify-content: space-between;
     align-items: center;
 }
 
-.home .prova .left-prova{
-    width: 30%;
-    /* debug */
-    background-color: rgb(0, 255, 21);
-    height: 90%;
-
+.left-prova{
+    width: 40%;
+    gap: 20px;
+    position: relative;
+    bottom: 30px;
 }
 
-.home .prova .right-prova{
+.left-prova p:nth-child(2){
+    align-self: flex-start;
+}
+
+.left-prova svg{
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+.right-prova{
     width: 60%;
-    /* debug */
-    background-color: rgb(0, 255, 34);
-    height: 90%;    
 }
 
 .piano{
@@ -133,34 +146,21 @@ header{
     margin-bottom: 30px;
     /* debug */
     height: 1000px;
-    background-color: blue;
 }
 
 .piano h1{
-    /* debug */
-    height: 80px;
-    background-color: black;
+    font-size: 2rem;
+    font-weight: 900;
 }
 
 .fatturazione{
     gap: 20px;
     align-items: center;
-    
-    /* debug */
-    width: 50%;
-    height: 80px;
-     background-color: red;
 }
 
-.mensile{
-    width: 40%;
-    height: 80%;
-    background-color: green;
-}
-.annuale{
-    width: 40%;
-    height: 80%;
-    background-color: green;
+.fatturazione svg{
+    height: 20px;
+    width: 20px;
 }
 
 .piano .griglia{
@@ -178,6 +178,23 @@ header{
     background-color: blueviolet;
     
 }
+
+.piano .griglia .card .titolo{
+    justify-content: center;
+    align-self: center;
+    height: 40px;   
+    width: 100%;
+}
+
+.piano .griglia .card .titolo svg{
+    height: 20px;   
+    width: 20px;
+}
+
+.piano .griglia .card .titolo>ul li:first-child{
+    list-style-image: url("favicon.ico");
+}
+
 
 .contatti{
     margin-bottom: 200px;
