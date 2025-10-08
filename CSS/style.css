@@ -229,3 +229,39 @@ header{
     width: 200px;
     background-color: red;
 }
+
+/* ----FOOTER---- */
+
+footer{
+    background-color: black;
+    height: 700px;
+    padding: 100px 0 50px;
+}
+
+.foot{
+    height: 90%;
+    background-color: blue;
+    gap: 20px
+}
+
+.top-foot{
+    height: 80%;
+    gap: 20px;
+
+    /* debug */
+    background-color: red;
+}
+
+.top-foot ul{
+    height: 100%;
+    width: calc(100 / 4 - 60 / 3);
+
+    /* debug */
+    background-color: green;
+}
+
+.bottom-foot{
+    height: 20%;
+    background-color: red;
+    width: 100%;
+}
