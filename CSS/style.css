@@ -185,6 +185,7 @@ header{
 .operazioni{
     gap: 80px;
     flex-direction: column;
+    margin-bottom: 100px;
     /* debug */
     height: 800px;
     background-color: blue;
@@ -210,3 +211,21 @@ header{
     background-color: chartreuse;
 }
 
+.coda{
+    padding-right: 30%;
+    
+    /* debug */
+    background-color: blue;
+    height: 300px;
+}
+
+.coda h3{
+    background-color: black;
+    font-size: 3rem;
+}
+
+.coda p{
+    height: 30px;
+    width: 200px;
+    background-color: red;
+}
